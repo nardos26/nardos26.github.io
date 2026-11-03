@@ -11,141 +11,91 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, sans-serif;
-            background: #f8f9fc;
+            background: #f4f6fa;
             color: #222;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
-            background: #151b2b;
+            background: #142b4a;
             color: white;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+            text-align: center;
+            padding: 55px 20px;
         }
 
-        header h2 {
-            color: #69a7ff;
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background: #203e63;
+            text-align: center;
+            padding: 15px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 8px;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #69a7ff;
-        }
-
-        .hero {
-            min-height: 420px;
-            padding: 100px 8%;
-            background: linear-gradient(120deg, #151b2b, #293e65);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-            margin: 10px 0;
-        }
-
-        .hero h1 span {
-            color: #69a7ff;
-        }
-
-        .hero p {
-            max-width: 550px;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: inline-block;
-            width: fit-content;
-            padding: 12px 25px;
-            background: #69a7ff;
-            color: #151b2b;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
+            margin: 0 12px;
         }
 
         section {
-            padding: 65px 8%;
-        }
-
-        section h2 {
-            color: #20365d;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            max-width: 750px;
-        }
-
-        .skills-container,
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 30px;
+            border-radius: 12px;
         }
 
-        .card h3 {
-            color: #315a96;
-            margin-bottom: 10px;
+        h2 {
+            color: #142b4a;
+            margin-bottom: 15px;
         }
 
-        .contact {
-            background: #eaf0fa;
+        ul {
+            padding-left: 22px;
         }
 
-        .contact a {
-            color: #315a96;
-            text-decoration: none;
+        .project {
+            background: #f4f6fa;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #2464a5;
         }
 
         footer {
-            background: #151b2b;
+            background: #142b4a;
             color: white;
             text-align: center;
             padding: 20px;
         }
 
         @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
+            header h1 {
+                font-size: 27px;
             }
 
-            nav {
-                text-align: center;
+            nav a {
+                display: inline-block;
+                margin: 5px;
             }
 
-            .hero {
-                padding: 75px 8%;
-            }
-
-            .hero h1 {
-                font-size: 32px;
+            section {
+                margin: 15px;
+                padding: 22px;
             }
         }
     </style>
@@ -154,98 +104,71 @@
 <body>
 
     <header>
-        <h2>Nardos.</h2>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Nardos Wondimagegn</h1>
+        <p>Software Engineering Student | Aspiring Software Engineer</p>
     </header>
 
-    <div class="hero" id="home">
-        <p>Hello, welcome to my portfolio!</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <h1>I'm <span>Nardos Wondimagegn</span></h1>
-
-        <h3>Software Engineering Student</h3>
-
-        <p>
-            I am a third-year Software Engineering student
-            passionate about technology, programming, and
-            creating useful digital solutions.
-        </p>
-
-        <a href="#about" class="btn">Discover More</a>
-    </div>
-
-    <section class="about" id="about">
+    <section id="about">
         <h2>About Me</h2>
-
         <p>
-            My name is Nardos Wondimagegn. I am a third-year
-            Software Engineering student. I am interested in
-            software development, web technologies, and
-            learning new programming skills.
-
-            My goal is to become a professional software
-            engineer and build creative and meaningful
-            technology solutions.
+            Hello! My name is Nardos Wondimagegn.
+            I am a third-year Software Engineering student
+            who is passionate about technology, programming,
+            and building useful software solutions.
+            My goal is to become a professional software engineer.
         </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Field:</strong> Software Engineering</p>
+        <p><strong>Level:</strong> Third-Year Student</p>
+        <p><strong>Institution:</strong> Add your university name</p>
     </section>
 
     <section id="skills">
         <h2>My Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="card">
-                <h3>HTML</h3>
-                <p>Learning web page structure.</p>
-            </div>
-
-            <div class="card">
-                <h3>CSS</h3>
-                <p>Learning website styling and design.</p>
-            </div>
-
-            <div class="card">
-                <h3>Programming</h3>
-                <p>Developing programming knowledge.</p>
-            </div>
-
-        </div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Programming Fundamentals</li>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+        </ul>
+        <p>More skills will be added as I continue learning.</p>
     </section>
 
     <section id="projects">
         <h2>My Projects</h2>
 
-        <div class="projects-container">
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>A personal website introducing my education,
+            skills, interests, and projects.</p>
+        </div>
 
-            <div class="card">
-                <h3>Project One</h3>
-                <p>My first project will be added here.</p>
-            </div>
-
-            <div class="card">
-                <h3>Project Two</h3>
-                <p>My second project will be added here.</p>
-            </div>
-
+        <div class="project">
+            <h3>Future Project</h3>
+            <p>New software engineering projects will be
+            added here.</p>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
-
         <p>Email:
             <a href="mailto:nardoswondimagegn6@gmail.com">
                 nardoswondimagegn6@gmail.com
             </a>
         </p>
-
         <p>GitHub:
             <a href="https://github.com/nardos26">
                 github.com/nardos26
@@ -254,10 +177,7 @@
     </section>
 
     <footer>
-        <p>
-            © 2026 Nardos Wondimagegn.
-            All Rights Reserved.
-        </p>
+        <p>&copy; 2026 Nardos Wondimagegn. All rights reserved.</p>
     </footer>
 
 </body>
